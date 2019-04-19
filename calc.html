@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Calc</title>
+	<style>
+		.form {
+			max-width: 300px;
+			height: 300px;
+			margin: 0 auto;
+			padding: 30px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border: 1px solid #9f9f9f;
+			text-align: center;
+		}
+		.form__input {
+			display: block;
+			width: 90%;
+			margin: 20px auto;
+			border-radius: 5px;
+			outline: none;
+			padding: 10px;
+		}
+		.form__btn {
+			 margin-bottom: 30px;
+		}
+		.result {
+			width: 90%;
+			height: 30px;
+			margin: 0 auto;
+			text-align: center;
+			background-color: #f9f9f9;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" class="form">
+		<input type="text" class="form__input num1">
+		<input type="text" class="form__input num2">
+		<button class="form__btn" name="sum" data-val='+'>+</button>
+		<button class="form__btn" name="multiplication" data-val='*'>x</button>
+		<button class="form__btn" name="substraction" data-val='-'>-</button>
+		<button class="form__btn" name="division" data-val='/'>/</button>
+		<p class="result"></p>
+	</form>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var a = document.querySelector('.num1');
+			var b = document.querySelector('.num2');
+			var result = document.querySelector('.result');
+			var total = 0;
+			document.querySelector('.form').addEventListener('click', function(e) {
+				switch(e.target.name) {
+					case 'sum' :
+						total = +a.value + +b.value;
+						result.innerText = total;
+						break;
+					case 'multiplication' :
+						total = +a.value * +b.value;
+						result.innerText = total;
+						break;
+					case 'substraction' : 
+						total = +a.value - +b.value;
+						result.innerText = total;
+						break
+					case 'division' : 
+						total = +a.value / +b.value;
+						result.innerText = total;
+						break	
+				}
+			})
+			
+		})
+	</script>
+</body>
+</html>
