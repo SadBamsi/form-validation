@@ -6,12 +6,38 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<form class="form" novalidate action="#">
+	<!-- <form class="form" novalidate action="#">
 			<input required type="text" placeholder="Phone format+123(45)678-91-23" data-val="phone" class="text">
 			<input required type="text" placeholder="enter your name" data-val="name" class="text">
 			<input required type="text" placeholder="enter your email" data-val="email" class="text">
 			<input class="submit" name="phone-btn" type="submit">
-	</form>
-	<script src="main.js"></script>
+	</form> -->
+<section id="1" class="first">
+	<div class="gallery">
+		<img class="active" src="img/1.jpeg" alt="slider item">
+		<img src="img/2.jpeg" alt="slider item">
+		<img src="img/3.jpeg" alt="slider item">
+		<img src="img/4.jpeg" alt="slider item">
+		<img src="img/5.jpeg" alt="slider item">
+		<div class="control-block">
+			<button class="controls prev-btn">Prev</button>
+			<button class="controls next-btn">Next</button>
+		</div>
+	</div>
+</section>
+<section id="2" class="second">
+	<div class="second-gallery">
+		<img src="img/6.jpeg" alt="second slider item" class="second-arr active">
+		<img src="img/7.jpeg" alt="second slider item" class="second-arr">
+		<img src="img/8.jpeg" alt="second slider item" class="second-arr">
+		<img src="img/9.jpeg" alt="second slider item" class="second-arr">
+		<img src="img/10.jpeg" alt="second slider item" class="second-arr">
+	</div>
+	<div class="control-block">
+		<button class="controls prev-btn2">Prev</button>
+		<button class="controls next-btn2">Next</button>
+	</div>
+</section>
+	<script src="slider.js"></script>
 </body>
 </html>
