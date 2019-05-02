@@ -27,6 +27,7 @@ body {
 	transform: translate(-50%, -50%);
 	visibility: hidden;
 	opacity: 0;
+	padding: 10px 20px;
 }
 .popup-btn {
 	position: absolute;
@@ -43,6 +44,12 @@ body {
 	border: none;
 	border-radius: 5px;
 	padding: 10px;
+}
+.popup-img {
+	height: 50%;
+	width: 100%;
+	margin: 0 auto;
+	fill: transparent;
 }
 .active {
 	visibility: visible;
